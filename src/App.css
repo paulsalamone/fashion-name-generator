@@ -1,38 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
+
 .App {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: rgb(0, 100, 161);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 100, 161, 1) 0%,
+    rgba(215, 215, 215, 1) 47%,
+    rgba(255, 255, 255, 1) 65%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: linear-gradient(to left top, rgb(221, 0, 255), rgb(0, 255, 251))
+    fixed;
+
+  margin: 0px;
+  padding: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-family: "Katibeh", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 4.5rem;
+  color: white;
+  margin: 40px 0 5px 0;
+  text-shadow: 0 0 30px rgb(255, 0, 255);
+}
+
+.container {
+  border: 1px dotted grey;
+  margin: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+}
+
+.container p {
+  background-color: rgb(235, 255, 202);
+  width: 50%;
+  font-size: 1.3rem;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(128, 152, 10, 0.4);
+}
+
+.word {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  margin: 20px;
+  padding: 4px 7px;
+  border: 2px solid black;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px grey;
 }

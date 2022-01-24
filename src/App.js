@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState, useEffect } from "react";
+import NewWords from "./NewWords";
+import Combos from "./Combos";
+
+const generate = require("project-name-generator");
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>👜 Digital Fashion Name Generator 👠</h1>
+      <p>
+        WARNING: the new words disappear forever when you click the buttons --
+        write them down!
+      </p>
+      <main>
+        <NewWords />
+
+        <Combos />
+
+        {/* <button onClick={handleMore}>Get 7 more</button> */}
+      </main>
+      <p>©2022 Paul Salamone Design</p>
     </div>
   );
 }
